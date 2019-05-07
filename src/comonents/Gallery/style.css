@@ -1,0 +1,96 @@
+@-webkit-keyframes fade-in {   0% { opacity: 0.1; }   100% { opacity: 1; }   }
+@-moz-keyframes    fade-in {   0% { opacity: 0.1; }   100% { opacity: 1; }   }
+@-o-keyframes      fade-in {   0% { opacity: 0.1; }   100% { opacity: 1; }   }
+@keyframes         fade-in {   0% { opacity: 0.1; }   100% { opacity: 1; }   }
+body {
+  -moz-animation: fade-in 1s linear;
+  -o-animation: fade-in 1s linear;
+  animation: fade-in 1s linear;
+  -webkit-animation: fade-in 1s linear; 
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;;
+  -o-transition: all 0.3s ease;;
+  transition: all 0.3s ease;
+}
+button {
+    color: #444444;
+    background: #F3F3F3;
+    border: 1px #DADADA solid;
+    margin-top: 10px;
+    padding: 5px 10px;
+    border-radius: 2px;
+    font-weight: bold;
+    font-size: 9pt;
+    outline: none;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    transition: .5s;
+}
+button:hover {
+    border: 1px #C6C6C6 solid;
+    box-shadow: 1px 1px 1px #EAEAEA;
+    color: #333333;
+    background: #F7F7F7;
+}
+button:active {
+    box-shadow: inset 1px 1px 1px #DFDFDF;   
+}
+input {
+    border: salmon;
+    font-size: 1em;
+    font-weight: 200;
+    border: none;
+    border-radius: 10px;
+    padding: 5px;
+    background: none;
+    outline: none;
+    font-family: 'Roboto Mono', monospace;
+    opacity:0.5;
+    transition: .5s;
+  }
+  input:focus  {
+    opacity: 1;
+    border: solid;
+  }
+  h1, footer,div{
+    font-family: 'Roboto Mono', monospace;
+  }
+#root {
+  display: flex;
+  flex-direction: column;
+  padding-inline-start: 45%;
+}
+button:hover {
+  -webkit-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  transform: rotate(360deg);
+}
+li{
+  list-style-type: none;
+  margin-bottom: -90px;
+}
+footer{
+  position: fixed;
+  bottom: 5%;
+  right: 10%;
+  margin-left: 50%;
+}
+footer, header{
+  transition: 0.5s;
+}
+footer:hover, header:hover{
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+}
+img{
+  max-height: 155px;
+  transition-property: all;
+  transition-duration: 0.5s;
+  border-radius: 10px;
+  transform:rotateZ(10deg) rotateY(-50deg) translateZ(50px);
+}
+img:hover{
+  transform:rotateX(0) rotateY(0) translateZ(0);
+  margin-bottom: 90px;
+}
